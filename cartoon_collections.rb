@@ -14,8 +14,7 @@ def summon_captain_planet(planeteer_calls)
  p string
 end
   planeteer_calls.map do |call|
-    call.capitalize
-    add_exclaim(call)
+    add_exclaim(call.capitalize)
   end
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
